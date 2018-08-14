@@ -57,7 +57,9 @@ plugins=(
   history
   thefuck
   docker
+  docker-aliases
   zsh-autosuggestions
+  hacker-quotes
 )
 
 source $ZSH/oh-my-zsh.sh
