@@ -52,14 +52,14 @@ plugins=(
   git
   brew
   vi-mode
-  fasd
-  rand-quote
-  history
   thefuck
   docker
   docker-aliases
+  cargo
+  rust
   zsh-autosuggestions
-  hacker-quotes
+  zsh-syntax-highlighting
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
