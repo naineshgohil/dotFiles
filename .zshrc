@@ -99,3 +99,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval $(thefuck --alias FUCK)
+
+export GPG_TTY=$(tty)
+export GITHUB_SSH_PRIVATE_KEY_B64="$(aws secretsmanager get-secret-value --secret-id FieldstoneGithubSSHKey | jq ".SecretBinary" -r)"
