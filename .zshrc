@@ -57,6 +57,7 @@ plugins=(
   docker-aliases
   cargo
   rust
+  rustup
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf
