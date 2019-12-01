@@ -6,16 +6,6 @@
   },
   "profiles": [
     {
-      "simple_modifications": [
-        {
-          "from": {
-            "key_code": "caps_lock"
-          },
-          "to": {
-            "key_code": "escape"
-          }
-        }
-      ],
       "complex_modifications": {
         "parameters": {
           "basic.simultaneous_threshold_milliseconds": 50,
@@ -284,6 +274,31 @@
             ]
           },
           {
+            "description": "Open Trello",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "mandatory": [
+                      "control",
+                      "command"
+                    ],
+                    "optional": [
+                      "caps_lock"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Trello.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Open Xcode",
             "manipulators": [
               {
@@ -441,6 +456,16 @@
         "delay_milliseconds_before_open_device": 1000
       },
       "selected": true,
+      "simple_modifications": [
+        {
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": {
+            "key_code": "escape"
+          }
+        }
+      ],
       "virtual_hid_keyboard": {
         "country_code": 0,
         "mouse_key_xy_scale": 100
