@@ -38,9 +38,7 @@
                 "from": {
                   "key_code": "h",
                   "modifiers": {
-                    "mandatory": [
-                      "left_alt"
-                    ]
+                    "mandatory": ["left_alt"]
                   }
                 },
                 "to": {
@@ -57,9 +55,7 @@
                 "from": {
                   "key_code": "l",
                   "modifiers": {
-                    "mandatory": [
-                      "left_alt"
-                    ]
+                    "mandatory": ["left_alt"]
                   }
                 },
                 "to": {
@@ -76,9 +72,7 @@
                 "from": {
                   "key_code": "k",
                   "modifiers": {
-                    "mandatory": [
-                      "left_alt"
-                    ]
+                    "mandatory": ["left_alt"]
                   }
                 },
                 "to": {
@@ -95,14 +89,32 @@
                 "from": {
                   "key_code": "j",
                   "modifiers": {
-                    "mandatory": [
-                      "left_alt"
-                    ]
+                    "mandatory": ["left_alt"]
                   }
                 },
                 "to": {
                   "key_code": "down_arrow"
                 },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Spotify",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Spotify.app'"
+                  }
+                ],
                 "type": "basic"
               }
             ]
@@ -114,13 +126,8 @@
                 "from": {
                   "key_code": "t",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -139,13 +146,8 @@
                 "from": {
                   "key_code": "g",
                   "modifiers": {
-                    "mandatory": [
-                      "command",
-                      "control"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["command", "control"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -164,13 +166,8 @@
                 "from": {
                   "key_code": "v",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -189,37 +186,12 @@
                 "from": {
                   "key_code": "y",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ]
+                    "mandatory": ["control", "command"]
                   }
                 },
                 "to": [
                   {
                     "shell_command": "open -a 'Simulator.app'"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Open Spotify",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "shell_command": "open -a 'Spotify.app'"
                   }
                 ],
                 "type": "basic"
@@ -233,10 +205,7 @@
                 "from": {
                   "key_code": "a",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ]
+                    "mandatory": ["control", "command"]
                   }
                 },
                 "to": [
@@ -255,13 +224,8 @@
                 "from": {
                   "key_code": "e",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
@@ -280,18 +244,33 @@
                 "from": {
                   "key_code": "r",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
                   {
                     "shell_command": "open -a 'Trello.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Notion",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Notion.app'"
                   }
                 ],
                 "type": "basic"
@@ -305,18 +284,33 @@
                 "from": {
                   "key_code": "x",
                   "modifiers": {
-                    "mandatory": [
-                      "control",
-                      "command"
-                    ],
-                    "optional": [
-                      "caps_lock"
-                    ]
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
                   }
                 },
                 "to": [
                   {
                     "shell_command": "open -a 'Xcode.app'"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Podcasts",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": ["control", "command"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Podcasts.app'"
                   }
                 ],
                 "type": "basic"
