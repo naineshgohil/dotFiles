@@ -1,7 +1,0 @@
-package aws
-package foreign-env
-package https://github.com/b4b4r07/enhancd
-package nvm
-package rustup
-theme default
-theme l
